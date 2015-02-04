@@ -12,7 +12,7 @@ struct Family {
     
     init(index: Int) {
         let families = Families().families
-        let family = families(index)
+        let family = families[index]
     }
     
 }
