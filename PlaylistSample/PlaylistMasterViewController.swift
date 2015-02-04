@@ -20,6 +20,13 @@ class PlaylistMasterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier! == "SeguePlaylistDetail" {
+            let playlistDetailViewController = segue.destinationViewController as PlaylistDetailViewController
+        
+            playlistDetailViewController.family = Family(index: 0)
+        }
+    }
 
 }
 

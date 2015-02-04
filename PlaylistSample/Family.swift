@@ -9,10 +9,17 @@
 import Foundation
 
 struct Family {
+    var lName:  String
+    var fNames: [String] = []
+    var petName: String?
     
     init(index: Int) {
         let families = Families().families
         let family = families[index]
+        
+        lName = family["LastName"] as String
+        fNames += family["FirstNames"] as [String]
+        petName = family["PetName"] as String!
     }
     
 }

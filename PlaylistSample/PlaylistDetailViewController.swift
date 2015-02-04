@@ -9,16 +9,23 @@
 import UIKit
 
 class PlaylistDetailViewController: UIViewController {
-
+    
+    @IBOutlet var lastNameLabel: UILabel!
+    var family: Family?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if family != nil {
+            lastNameLabel.text = family!.lName
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
 
