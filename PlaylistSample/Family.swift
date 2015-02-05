@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct Family {
     var lName:  String
     var fNames: [String] = []
     var petName: String?
+    var icon: UIImage?
     
     init(index: Int) {
         let families = Families().families
@@ -20,6 +22,8 @@ struct Family {
         lName = family["LastName"] as String
         fNames += family["FirstNames"] as [String]
         petName = family["PetName"] as String!
+        let iconName = family["Icon"] as String
+        icon = UIImage(named: iconName) as UIImage!
     }
     
 }

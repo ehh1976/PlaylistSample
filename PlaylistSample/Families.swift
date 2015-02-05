@@ -13,32 +13,38 @@ struct Families{
         [
             "LastName": "Hillel",
             "FirstNames":["Eric","Ayelet","Shay","Noy","Itay"],
-            "PetName": "Lucky"
+            "PetName": "Lucky",
+            "Icon": "Hillel.pdf"
         ],
         [
             "LastName": "Green",
             "FirstNames":["Alon","Keren","Tom"],
-            "PetName": ""
+            "PetName": "",
+            "Icon": "Green.pdf"
         ],
         [
             "LastName": "Hans",
             "FirstNames":["Mathiew","Dana"],
-            "PetName": "Milki"
+            "PetName": "Milki",
+            "Icon": "Hans.pdf"
         ],
         [
             "LastName": "Vermont",
             "FirstNames":["Alex","Miriam","Sam","Dan"],
-            "PetName": "As"
+            "PetName": "As",
+            "Icon": "Vermont.pdf"
         ],
         [
-            "LastName": "Vermont",
+            "LastName": "Bart",
             "FirstNames":["Mike","Grace","Dina","William","Mark"],
-            "PetName": ""
+            "PetName": "",
+            "Icon": "Bart.pdf"
         ],
         [
             "LastName": "Cohen",
             "FirstNames":["Sami","Lilane"],
-            "PetName": "Dingo"
+            "PetName": "Dingo",
+            "Icon": "Cohen.pdf"
         ]
     ]
 }

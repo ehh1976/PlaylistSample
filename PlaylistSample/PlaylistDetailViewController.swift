@@ -19,6 +19,7 @@ class PlaylistDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         if family != nil {
             lastNameLabel.text = family!.lName
+            
         }
     }
 
@@ -28,7 +29,7 @@ class PlaylistDetailViewController: UIViewController {
         
     }
     
-
+	
     /*
     // MARK: - Navigation
 

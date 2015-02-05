@@ -11,9 +11,17 @@ import UIKit
 class PlaylistMasterViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let imageName = "Bart.pdf"
+        let image = UIImage(named: imageName)
+        //familyIcon.UIImageView.image = image
+        familyIcon.image = image
     }
+    @IBOutlet var familyIcon: UIImageView!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

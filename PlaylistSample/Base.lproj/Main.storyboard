@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGC-Qp-Jnc">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <rect key="frame" x="277" y="408" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,14 +25,36 @@
                                     <segue destination="lxH-tA-07F" kind="show" identifier="SeguePlaylistDetail" id="WvF-xi-3jV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-MK-hEQ">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Tzw-0A-GJt"/>
+                                    <constraint firstAttribute="height" constant="200" id="q66-u3-i5S"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CGC-Qp-Jnc" firstAttribute="top" secondItem="YRR-MK-hEQ" secondAttribute="bottom" constant="8" id="61P-zI-ege"/>
+                            <constraint firstAttribute="centerX" secondItem="YRR-MK-hEQ" secondAttribute="centerX" id="GGy-Tz-gDm"/>
+                            <constraint firstItem="CGC-Qp-Jnc" firstAttribute="top" secondItem="YRR-MK-hEQ" secondAttribute="bottom" constant="8" id="GqN-SM-6j2"/>
+                            <constraint firstAttribute="centerY" secondItem="YRR-MK-hEQ" secondAttribute="centerY" id="SsU-6D-1nT"/>
                             <constraint firstAttribute="centerX" secondItem="CGC-Qp-Jnc" secondAttribute="centerX" id="iUV-l0-6z9"/>
+                            <constraint firstItem="CGC-Qp-Jnc" firstAttribute="top" secondItem="YRR-MK-hEQ" secondAttribute="bottom" constant="8" id="qgB-ar-h5G"/>
                             <constraint firstAttribute="centerY" secondItem="CGC-Qp-Jnc" secondAttribute="centerY" id="yp0-Gq-6Jp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="61P-zI-ege"/>
+                                <exclude reference="GqN-SM-6j2"/>
+                                <exclude reference="yp0-Gq-6Jp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Families" id="77U-hc-prJ"/>
+                    <connections>
+                        <outlet property="familyIcon" destination="YRR-MK-hEQ" id="8Kb-NT-oPi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWG-zT-eqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828" y="389"/>
+            <point key="canvasLocation" x="1659" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lle-7z-9QS">
@@ -88,7 +110,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWu-s7-s0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="1050"/>
+            <point key="canvasLocation" x="397" y="389"/>
         </scene>
     </scenes>
 </document>
