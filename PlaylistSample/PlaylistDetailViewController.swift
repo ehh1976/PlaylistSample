@@ -10,6 +10,7 @@ import UIKit
 
 class PlaylistDetailViewController: UIViewController {
     
+    @IBOutlet var familyImage: UIImageView!
     @IBOutlet var lastNameLabel: UILabel!
     var family: Family?
     
@@ -19,7 +20,7 @@ class PlaylistDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         if family != nil {
             lastNameLabel.text = family!.lName
-            
+            familyImage.image = family!.icon!
         }
     }
 

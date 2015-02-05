@@ -78,15 +78,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cst-wK-8HF">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bo5-Cu-Rqy"/>
+                                    <constraint firstAttribute="width" constant="240" id="EnJ-81-iOp"/>
+                                    <constraint firstAttribute="height" constant="200" id="ZDn-zX-7Y9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EnJ-81-iOp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cst-wK-8HF" secondAttribute="centerX" id="A5l-xC-Qa3"/>
+                            <constraint firstAttribute="centerY" secondItem="cst-wK-8HF" secondAttribute="centerY" id="D04-MJ-t9e"/>
                             <constraint firstItem="i7f-jm-LhC" firstAttribute="top" secondItem="OLY-Rh-Vzb" secondAttribute="bottom" constant="36" id="i1Q-x0-1dJ"/>
                             <constraint firstAttribute="centerX" secondItem="i7f-jm-LhC" secondAttribute="centerX" id="sLx-3e-g5Q"/>
+                            <constraint firstItem="mKL-m5-W11" firstAttribute="top" secondItem="cst-wK-8HF" secondAttribute="bottom" constant="236" id="vQn-BQ-FdJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vQn-BQ-FdJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Family" id="doX-H3-URc"/>
                     <connections>
+                        <outlet property="familyImage" destination="cst-wK-8HF" id="eNc-4f-GjZ"/>
                         <outlet property="lastNameLabel" destination="i7f-jm-LhC" id="qPt-3n-SLW"/>
                     </connections>
                 </viewController>

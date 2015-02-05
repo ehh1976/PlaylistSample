@@ -32,7 +32,7 @@ class PlaylistMasterViewController: UIViewController {
         if segue.identifier! == "SeguePlaylistDetail" {
             let playlistDetailViewController = segue.destinationViewController as PlaylistDetailViewController
         
-            playlistDetailViewController.family = Family(index: 0)
+            playlistDetailViewController.family = Family(index: 4)
         }
     }
 
